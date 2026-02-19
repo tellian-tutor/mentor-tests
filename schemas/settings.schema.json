@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "settings.schema.json",
+  "title": "Test Settings",
+  "description": "Schema for settings.json — language-independent test configuration. All fields are optional; the backend and frontend apply defaults when absent.",
+  "type": "object",
+  "properties": {
+    "time_limit_minutes": {
+      "oneOf": [
+        { "type": "integer", "minimum": 1 },
+        { "type": "null" }
+      ],
+      "description": "Timer duration in minutes. null or absent means no time limit."
+    },
+    "randomize_order": {
+      "type": "boolean",
+      "description": "Whether to shuffle question order on each attempt."
+    },
+    "max_score": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 1000,
+      "description": "Maximum achievable score for the test."
+    },
+    "mode": {
+      "type": "string",
+      "enum": ["training", "control"],
+      "description": "Test mode. 'training' allows retries and feedback; 'control' is a graded exam."
+    },
+    "passing_score": {
+      "oneOf": [
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "null" }
+      ],
+      "description": "Fraction (0–1) of max_score required to pass. null means no passing threshold."
+    },
+    "passing_mode": {
+      "type": "string",
+      "enum": ["any", "control"],
+      "description": "'any' — best attempt counts; 'control' — only control-mode attempts count."
+    },
+    "include_previous_context": {
+      "type": "boolean",
+      "description": "Whether to include prior question-answer pairs in the AI evaluation context."
+    },
+    "context_depth": {
+      "oneOf": [
+        { "type": "string", "enum": ["all"] },
+        { "type": "integer", "minimum": 0 }
+      ],
+      "description": "How many previous answers to include. 'all' or a non-negative integer."
+    },
+    "show_ai_recommendation": {
+      "type": "boolean",
+      "description": "Whether the frontend displays the AI score recommendation to the student."
+    },
+    "enable_final_overview": {
+      "type": "boolean",
+      "description": "Whether an AI-generated final overview is produced after test completion."
+    },
+    "final_overview_replace_score": {
+      "type": "boolean",
+      "description": "When true, the final overview score replaces the per-question aggregate score."
+    },
+    "final_overview_student_visible": {
+      "type": "boolean",
+      "description": "Whether the student can see the final overview."
+    },
+    "final_overview_teacher_visible": {
+      "type": "boolean",
+      "description": "Whether the teacher can see the final overview."
+    },
+    "show_correct_answers": {
+      "type": "boolean",
+      "description": "Whether correct answers are shown after submission (frontend only)."
+    },
+    "show_explanations": {
+      "type": "boolean",
+      "description": "Whether explanations are shown after submission (frontend only)."
+    },
+    "feedback_mode": {
+      "type": "string",
+      "enum": ["score", "detailed", "none"],
+      "description": "Level of feedback shown to the student after submission (frontend only)."
+    },
+    "research": {
+      "type": "object",
+      "description": "Research-mode settings for experimental features.",
+      "properties": {
+        "pre_commitment_enabled": {
+          "type": "boolean",
+          "description": "Enable the pre-commitment prompt before AI evaluation."
+        },
+        "pre_commitment_frequency": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Show pre-commitment prompt every N questions (0 = disabled)."
+        },
+        "ai_suggestions_enabled": {
+          "type": "boolean",
+          "description": "Enable AI-authored answer suggestions for students."
+        },
+        "ai_suggestion_frequency": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Show AI suggestions every N questions (0 = disabled)."
+        },
+        "ai_suggestion_types": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Types of AI suggestions to offer (e.g. 'rephrase', 'hint')."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

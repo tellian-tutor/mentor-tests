@@ -1,0 +1,26 @@
+{
+  "text": "What is overfitting in machine learning, and name TWO practical ways to reduce it?",
+  "difficulty": 2,
+  "min_words": 40,
+  "max_length": 1000,
+  "correct_answer": "Overfitting is when a model fits training data too closely (including noise) and generalizes poorly. Mitigations include regularization (L2/weight decay), early stopping, more data/augmentation, simpler model, dropout, and cross-validation for tuning.",
+  "ai_context": "Look for: definition (train vs test gap, poor generalization) + two actionable mitigations (e.g., regularization, early stopping, augmentation, simplifying model).",
+  "ai_suggestions": [
+    {
+      "score": 1.0,
+      "text": "Clearly defines overfitting and gives two or more valid mitigation techniques with brief rationale."
+    },
+    {
+      "score": 0.7,
+      "text": "Defines overfitting correctly and provides at least two mitigations but with limited explanation."
+    },
+    {
+      "score": 0.3,
+      "text": "Mentions memorization/generalization but gives only one mitigation or mixes concepts."
+    },
+    {
+      "score": 0.0,
+      "text": "Incorrect or irrelevant explanation."
+    }
+  ]
+}

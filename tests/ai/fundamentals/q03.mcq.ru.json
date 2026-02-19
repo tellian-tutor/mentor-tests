@@ -1,0 +1,14 @@
+{
+  "text": "Выберите ВСЕ компоненты, которые обычно входят в блок Transformer.",
+  "difficulty": 3,
+  "options": [
+    "Self-attention (или multi-head attention)",
+    "Шаг кластеризации k-means",
+    "Позиционная feed-forward сеть (MLP)",
+    "Нормализация слоя (LayerNorm)"
+  ],
+  "correct_indices": [0, 2, 3],
+  "allow_multiple": true,
+  "correct_answer": "Self-attention (multi-head attention), позиционная feed-forward сеть (MLP) и нормализация слоя (LayerNorm).",
+  "explanation": "Стандартный блок Transformer включает (self-)attention и позиционную feed-forward сеть, обычно с residual-связями и layer normalization."
+}

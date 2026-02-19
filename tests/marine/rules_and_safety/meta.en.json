@@ -1,0 +1,7 @@
+{
+  "name": "Maritime Rules & Safety — Scenario Mini-Test",
+  "description": "A 5-question scenario-based test designed to demonstrate deep understanding: right-of-way reasoning, ambiguity handling, passage planning, man-overboard response, and go/no-go decisions. Optimized for a wow-effect demo in any boating/yachting school.",
+  "instructions": "Answer in complete sentences. Treat each question as a real on-water situation. If something is uncertain, explicitly state assumptions and choose the safest behavior. Avoid relying on colors or local conventions unless the question explicitly asks for them.",
+  "ai_instructions": "Evaluate safety-first reasoning, correctness of rules logic, completeness, and decision-making quality. Give partial credit for correct risk management even when exact terminology is imperfect. Penalize dangerous advice, missing critical steps, or overconfident claims without checks.",
+  "final_overview_instructions": "Final overview must include: (1) readiness level for safe boating, (2) top 3 risk-critical gaps, (3) 3 prioritized training recommendations, (4) 1 short practice drill for each gap."
+}

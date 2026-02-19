@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "meta.schema.json",
+  "title": "Test Metadata",
+  "description": "Schema for meta.{lang}.json files — per-language test metadata.",
+  "type": "object",
+  "required": ["name", "description", "instructions", "ai_instructions"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Human-readable test name."
+    },
+    "description": {
+      "type": "string",
+      "description": "Short description shown to students before starting the test."
+    },
+    "instructions": {
+      "type": "string",
+      "description": "Instructions displayed to the student at the beginning of the test."
+    },
+    "ai_instructions": {
+      "type": "string",
+      "description": "System-level instructions sent to the AI evaluator for this test."
+    },
+    "final_overview_instructions": {
+      "type": "string",
+      "description": "Instructions for the AI when generating the final overview (used when enable_final_overview is true in settings)."
+    }
+  },
+  "additionalProperties": false
+}

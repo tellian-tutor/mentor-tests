@@ -1,0 +1,14 @@
+{
+  "text": "Which statement best describes supervised learning?",
+  "difficulty": 1,
+  "options": [
+    "Training without labels by finding structure in data",
+    "Training on labeled input–output examples to learn a mapping",
+    "Learning by trial-and-error using rewards and penalties",
+    "Hard-coding if/else rules written by an engineer"
+  ],
+  "correct_index": 1,
+  "allow_multiple": false,
+  "correct_answer": "Training a model on labeled input–output examples to learn a mapping.",
+  "explanation": "In supervised learning, labels (targets) guide optimization; the model learns to predict outputs from inputs."
+}

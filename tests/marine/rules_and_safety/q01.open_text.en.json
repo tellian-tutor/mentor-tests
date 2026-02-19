@@ -1,0 +1,31 @@
+{
+  "text": "Crossing situation: Who gives way and why?\n\nContext:\nYou are on a power-driven vessel in open water with good visibility. Another power-driven vessel is approaching from your starboard bow (about 30–40 degrees). The distance is decreasing and your relative bearing looks steady.\n\nTask:\n1) Decide who is the give-way vessel and who is the stand-on vessel.\n2) Explain your reasoning step-by-step (how you detect risk of collision, what rule logic you apply).\n3) Describe what a GOOD give-way maneuver looks like (timing, magnitude, avoiding what).\n4) Describe what the stand-on vessel should do and when it may/must act.\n\nWrite as if you were teaching a student to think, not to memorize.",
+  "difficulty": 3,
+  "correct_answer": "Key logic: a steady (or nearly steady) bearing with decreasing range indicates risk of collision, so action is required. In a power-vs-power crossing, the vessel that has the other on her starboard side is the give-way vessel. Therefore, you (seeing the other on your starboard bow) are typically the give-way vessel; the other is stand-on.\n\nGood give-way maneuver: act early and decisively, make a clear course and/or speed change large enough to be obvious, and generally avoid crossing ahead. Common safe choice is an early turn to starboard to pass astern (if sea room allows), while maintaining lookout and safe speed.\n\nStand-on behavior: initially maintain course and speed to be predictable, keep a good lookout, and monitor whether the give-way vessel is taking appropriate action. If it becomes apparent the give-way vessel is not acting, the stand-on vessel may take action to avoid collision; if collision cannot be avoided by the give-way vessel alone, the stand-on vessel must act, choosing the safest available maneuver.\n\nCritical safety notes: do not \"freeze\"—keep monitoring; avoid small ambiguous changes; communicate if needed; prioritize collision avoidance over strict rule formalism.",
+  "explanation": "This question tests collision-risk recognition, right-of-way logic, and safe maneuver quality. The best answers show reasoning, not slogans.",
+  "ai_context": "Look for: (1) risk-of-collision cue (steady bearing + decreasing range), (2) correct give-way/stand-on assignment for power-vs-power crossing, (3) early/decisive/clear maneuver description, (4) stand-on obligations incl. when to act, (5) safety-first framing and avoidance of ambiguous small changes.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Correct assignment + explicit collision-risk reasoning + clear safe maneuvers for both vessels with timing and safety notes."
+    },
+    {
+      "score": 0.8,
+      "text": "Mostly correct logic; minor terminology issues; maneuver description is good but lacks one key nuance (e.g., when stand-on must act)."
+    },
+    {
+      "score": 0.5,
+      "text": "Identifies some parts correctly but misses collision-risk cue or gives vague/ambiguous maneuver guidance."
+    },
+    {
+      "score": 0.2,
+      "text": "Confused roles or proposes risky actions (e.g., crossing ahead without justification)."
+    },
+    {
+      "score": 0,
+      "text": "Incorrect and unsafe."
+    }
+  ],
+  "min_words": 120,
+  "max_length": 2000
+}

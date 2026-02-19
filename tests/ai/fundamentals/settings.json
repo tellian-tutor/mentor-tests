@@ -1,0 +1,8 @@
+{
+  "time_limit_minutes": 20,
+  "randomize_order": false,
+  "show_correct_answers": true,
+  "research": {
+    "pre_commitment_frequency": 1
+  }
+}

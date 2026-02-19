@@ -1,0 +1,31 @@
+{
+  "text": "Man Overboard (MOB): first 30 seconds vs next 5 minutes.\n\nContext:\nDaytime. A person falls overboard from your boat. Moderate wind, small waves. There are 3 people onboard including you. One remaining crew member is a weak swimmer.\n\nTask:\nDescribe:\n1) Actions in the first 30 seconds.\n2) Actions in the next 5 minutes.\n3) What you must NOT do.\n4) How your actions change at night.\n\nYour answer should be structured and prioritized (what matters most).",
+  "difficulty": 4,
+  "correct_answer": "First 30 seconds: raise the alarm ('Man overboard'), point continuously, assign a dedicated spotter, throw flotation/marker immediately, and prevent additional people from entering the water (especially the weak swimmer). Reduce speed promptly and set up the boat for recovery.\n\nNext 5 minutes: execute a controlled recovery maneuver appropriate to your boat and conditions (slow, deliberate, keep the person in sight). Approach from a safe direction (often downwind/downcurrent as appropriate), stop/neutral near the person, and recover using a ladder, sling, or heave line—avoid propeller hazards. Consider calling for help early if conditions or crew capability make recovery uncertain.\n\nMust NOT do: lose visual contact; send an unprepared weak swimmer into the water; approach at speed; keep engine engaged near the person; make sharp high-speed turns; delay flotation.\n\nAt night: marking and locating become critical—use lights, sound signals, MOB button/GPS mark, and maximize visibility. Emphasize prevention (tethers, lifejackets) and conservative decisions; call for help earlier.\n\nCore evaluation: prioritization, role assignment, flotation/marking, safe maneuvering, and avoiding secondary casualties.",
+  "explanation": "Great answers read like an emergency checklist with roles and 'do-not-do' constraints.",
+  "ai_context": "Look for: (1) alarm + continuous pointing + dedicated spotter, (2) immediate flotation/marker, (3) prevention of secondary casualty (do not send weak swimmer), (4) controlled slow approach and propeller safety, (5) night-specific localization steps (lights, MOB/GPS mark), (6) clear 'must not' list.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Structured, prioritized, includes roles, flotation, safe approach, propeller safety, night adaptations, and strong 'do not' items."
+    },
+    {
+      "score": 0.8,
+      "text": "Correct main steps, but missing one critical element (e.g., dedicated spotter or propeller hazard)."
+    },
+    {
+      "score": 0.5,
+      "text": "General description without timing split, prioritization, or 'do not' constraints."
+    },
+    {
+      "score": 0.2,
+      "text": "Contains unsafe advice (e.g., sending a weak swimmer) or approaching at speed."
+    },
+    {
+      "score": 0,
+      "text": "Unsafe and incorrect."
+    }
+  ],
+  "min_words": 180,
+  "max_length": 2600
+}

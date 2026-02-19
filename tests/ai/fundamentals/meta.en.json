@@ -1,0 +1,6 @@
+{
+  "name": "AI Fundamentals Mini-Test",
+  "description": "A short 5-question test covering core AI/ML concepts, LLM basics, and practical safety considerations.",
+  "instructions": "Answer carefully. For open questions, use complete sentences and include concrete examples where asked.",
+  "ai_instructions": "Evaluate for factual accuracy, clarity, and completeness. Give partial credit for correct reasoning even if terminology is imperfect."
+}

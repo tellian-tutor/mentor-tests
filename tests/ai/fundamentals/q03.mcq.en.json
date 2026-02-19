@@ -1,0 +1,14 @@
+{
+  "text": "Select ALL components that are commonly part of a Transformer block.",
+  "difficulty": 3,
+  "options": [
+    "Self-attention (or multi-head attention)",
+    "k-means clustering step",
+    "Position-wise feed-forward network (MLP)",
+    "Layer normalization"
+  ],
+  "correct_indices": [0, 2, 3],
+  "allow_multiple": true,
+  "correct_answer": "Self-attention (multi-head attention), a position-wise feed-forward network (MLP), and layer normalization.",
+  "explanation": "A standard Transformer block uses (self-)attention and a position-wise feed-forward network, typically with residual connections and layer normalization."
+}

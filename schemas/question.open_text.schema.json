@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "question.open_text.schema.json",
+  "title": "Open Text Question",
+  "description": "Schema for q{NN}.open_text.{lang}.json — free-text question files.",
+  "type": "object",
+  "required": ["text", "difficulty", "min_words", "max_length", "correct_answer"],
+  "properties": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The question text displayed to the student."
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Difficulty level from 1 (easiest) to 5 (hardest)."
+    },
+    "min_words": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Minimum number of words required in the student's answer."
+    },
+    "max_length": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Maximum character length of the student's answer."
+    },
+    "correct_answer": {
+      "type": "string",
+      "description": "Reference answer used by the AI evaluator for scoring."
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Explanation shown to the student after submission (when show_explanations is true)."
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional image URL displayed alongside the question."
+    },
+    "ai_context": {
+      "type": "string",
+      "description": "Additional context sent to the AI evaluator for this question."
+    },
+    "ai_suggestions": {
+      "type": "array",
+      "description": "Pre-authored AI suggestions with associated scores.",
+      "items": {
+        "type": "object",
+        "required": ["score", "text"],
+        "properties": {
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Score associated with this suggestion (0.0–1.0)."
+          },
+          "text": {
+            "type": "string",
+            "description": "Suggestion text shown to the student."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

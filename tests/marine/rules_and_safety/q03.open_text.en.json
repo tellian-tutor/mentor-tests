@@ -1,0 +1,31 @@
+{
+  "text": "Passage planning with marks/buoys (system-agnostic).\n\nContext:\nYou are approaching a narrow channel / marina entrance. You see lateral marks indicating the channel edges (left/right in your local system) and you suspect a shallow area near your intended track. You have a chartplotter and depth sounder available, but your crew is inexperienced.\n\nTask:\nDescribe a safe passage plan:\n1) What you do before entering (checks, briefings, settings, speed plan).\n2) How you verify you are in the safe water (what instruments/cues, how you cross-check).\n3) What you do if the depth decreases unexpectedly.\n4) Name 3 typical beginner mistakes in this situation and how to prevent them.\n\nImportant: Avoid relying on mark colors; focus on the reasoning and cross-checks.",
+  "difficulty": 4,
+  "correct_answer": "Before entering: slow to a safe speed early; assign roles (helm, lookout, depth monitor); brief the crew on the plan and abort criteria; set chart scale appropriately; confirm datum/units; prepare fenders/lines if relevant; verify engine response and steering; consider wind/current set.\n\nVerification: do not trust a single source. Use chartplotter track + depth trend + visual alignment with marks/leading lines where available. Cross-check GPS position with expected depths and mark spacing. Maintain a conservative offset from hazards and avoid cutting corners.\n\nIf depth decreases: immediately reduce speed, stop/neutral if needed, and back out along the known-safe track if possible. Avoid sharp turns at speed. Re-check chart scale, position, tide assumptions, and sensor health. If unsure, abort entry and reassess.\n\nTypical mistakes: (1) entering too fast, (2) focusing on one instrument and losing visual lookout, (3) cutting between marks without understanding safe-water logic or assuming color conventions, (4) no crew roles/briefing. Prevention: slow earlier, assign tasks, use cross-checks, and keep an explicit abort plan.",
+  "explanation": "This tests practical seamanship: preparation, cross-checking, and abort criteria — the stuff that prevents groundings.",
+  "ai_context": "Score on: (1) pre-entry setup and crew briefing, (2) cross-check strategy (chart + depth + visuals), (3) safe-speed discipline, (4) concrete actions on unexpected shoaling, (5) explicit beginner mistakes and mitigations, (6) avoidance of color-dependent assumptions.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Clear plan with roles, cross-checks, abort criteria, and a safe response to shoaling; strong prevention of beginner errors."
+    },
+    {
+      "score": 0.8,
+      "text": "Good plan, but missing one key safety element (e.g., abort criteria or cross-check detail)."
+    },
+    {
+      "score": 0.5,
+      "text": "General advice; lacks roles, concrete steps, or what to do on unexpected depth drop."
+    },
+    {
+      "score": 0.2,
+      "text": "Relies mainly on mark colors or proposes risky speed/turn behavior."
+    },
+    {
+      "score": 0,
+      "text": "Unsafe or irrelevant."
+    }
+  ],
+  "min_words": 160,
+  "max_length": 2400
+}

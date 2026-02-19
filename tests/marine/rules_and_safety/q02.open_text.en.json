@@ -1,0 +1,31 @@
+{
+  "text": "Night lights: interpret ambiguity safely.\n\nContext:\nAt night you observe: one white light above one red light in a vertical line. Nearby (or below) you also notice two white masthead lights in a vertical line. You do NOT see clear sidelights.\n\nTask:\n1) Propose 2–3 plausible interpretations (what this could be).\n2) Explain what additional observations/checks you would do to confirm.\n3) Describe your immediate safe actions while uncertain (speed, course, lookout, communication).\n\nImportant: Do not guess confidently — demonstrate safe uncertainty handling.",
+  "difficulty": 4,
+  "correct_answer": "Good approach: treat the pattern as ambiguous and safety-critical. Plausible interpretations may include a vessel with restricted ability to maneuver or special operational status plus a larger power-driven vessel (two masthead lights indicate a larger vessel). The exact identification depends on full context (relative motion, additional lights/shapes, distance, and whether sidelights appear as you change bearing).\n\nConfirmation steps: continue systematic lookout; change bearing slightly (if safe) to reveal sidelights; use radar/AIS if available; estimate aspect and whether range is closing; listen on VHF/monitor working channels where appropriate; look for additional lights (sternlight, towing lights, work lights) and any consistent motion cues.\n\nImmediate safe actions while uncertain: reduce speed to a safe speed; increase CPA by an early, clear maneuver if risk is suspected; avoid crossing close ahead; keep maximum vigilance; prepare to communicate and to take collision-avoidance action promptly. The key is: manage risk first, classify second.",
+  "explanation": "The wow-effect here is demonstrating safe reasoning under ambiguity: multiple hypotheses, verification plan, and conservative action.",
+  "ai_context": "Evaluate: (1) acknowledges ambiguity, (2) offers multiple plausible interpretations without overclaiming, (3) proposes concrete verification steps (bearing change, radar/AIS, additional lights), (4) immediate safety actions (safe speed, CPA increase, avoid crossing ahead), (5) clear prioritization: collision avoidance over classification.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Multiple hypotheses + strong verification plan + conservative safety actions; no overconfident guessing."
+    },
+    {
+      "score": 0.8,
+      "text": "Good safety actions and some verification steps; hypotheses are plausible but limited."
+    },
+    {
+      "score": 0.5,
+      "text": "Tries to identify the vessel but misses safety-first steps or lacks concrete verification actions."
+    },
+    {
+      "score": 0.2,
+      "text": "Overconfident single guess; unsafe or vague actions."
+    },
+    {
+      "score": 0,
+      "text": "Incorrect and unsafe."
+    }
+  ],
+  "min_words": 140,
+  "max_length": 2200
+}

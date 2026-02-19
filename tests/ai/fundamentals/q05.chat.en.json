@@ -1,0 +1,8 @@
+{
+  "text": "You are deploying a generative AI assistant for customer support. Explain the key risks and how you would mitigate them. The AI will ask follow-up questions.",
+  "difficulty": 5,
+  "max_turns": 5,
+  "min_words_per_turn": 20,
+  "correct_answer": "Key risks: (1) hallucinations/incorrect guidance, (2) privacy/PII leakage and data retention issues, (3) security risks like prompt injection and unsafe tool actions, (4) policy/legal/compliance errors, (5) brand/reputation damage and poor user experience. Mitigations: retrieval-grounded answers with citations/links, strict uncertainty behavior and refusal rules, monitoring + QA sampling, PII redaction and data-minimization, no secrets in prompts, least-privilege tool access with allowlists and human-in-the-loop escalation for sensitive actions, clear audit logs and incident response runbooks.",
+  "ai_context": "Use Socratic follow-ups (2–3) focusing on: (1) hallucinations and how to measure/contain them, (2) privacy/PII handling and data retention, (3) escalation to humans and safe action boundaries. Evaluate practical thinking: policies, monitoring, and measurable controls."
+}

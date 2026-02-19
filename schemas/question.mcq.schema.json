@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "question.mcq.schema.json",
+  "title": "Multiple Choice Question",
+  "description": "Schema for q{NN}.mcq.{lang}.json — multiple-choice question files.",
+  "type": "object",
+  "required": ["text", "difficulty", "options", "allow_multiple", "correct_answer"],
+  "properties": {
+    "text": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The question text displayed to the student."
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Difficulty level from 1 (easiest) to 5 (hardest)."
+    },
+    "options": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 2,
+      "description": "List of answer options. Order matters — correct_index refers to position in this array."
+    },
+    "correct_index": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Zero-based index of the correct option. Required when allow_multiple is false."
+    },
+    "correct_indices": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "description": "Zero-based indices of all correct options. Required when allow_multiple is true."
+    },
+    "allow_multiple": {
+      "type": "boolean",
+      "description": "When false, exactly one option is correct (use correct_index). When true, multiple options may be correct (use correct_indices)."
+    },
+    "correct_answer": {
+      "type": "string",
+      "description": "Human-readable correct answer text used by the AI evaluator."
+    },
+    "explanation": {
+      "type": "string",
+      "description": "Explanation shown to the student after submission (when show_explanations is true)."
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Optional image URL displayed alongside the question."
+    },
+    "ai_context": {
+      "type": "string",
+      "description": "Additional context sent to the AI evaluator for this question."
+    },
+    "ai_suggestions": {
+      "type": "array",
+      "description": "Pre-authored AI suggestions with associated scores.",
+      "items": {
+        "type": "object",
+        "required": ["score", "text"],
+        "properties": {
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Score associated with this suggestion (0.0–1.0)."
+          },
+          "text": {
+            "type": "string",
+            "description": "Suggestion text shown to the student."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "if": {
+    "properties": {
+      "allow_multiple": { "const": false }
+    },
+    "required": ["allow_multiple"]
+  },
+  "then": {
+    "required": ["correct_index"]
+  },
+  "else": {
+    "if": {
+      "properties": {
+        "allow_multiple": { "const": true }
+      },
+      "required": ["allow_multiple"]
+    },
+    "then": {
+      "required": ["correct_indices"]
+    }
+  }
+}
