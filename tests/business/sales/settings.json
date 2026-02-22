@@ -1,0 +1,16 @@
+{
+  "time_limit_minutes": 3,
+  "randomize_order": false,
+  "include_previous_context": true,
+  "context_depth": "all",
+  "enable_final_overview": true,
+  "final_overview_student_visible": true,
+  "final_overview_teacher_visible": true,
+  "show_correct_answers": true,
+  "show_explanations": true,
+  "feedback_mode": "detailed",
+  "research": {
+    "ai_suggestions_enabled": true,
+    "ai_suggestion_frequency": 1
+  }
+}
