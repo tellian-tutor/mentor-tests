@@ -1,0 +1,27 @@
+{
+  "text": "You are selling a CRM platform to a Head of Sales at a mid-market SaaS company. During discovery, she mentions: \"Our pipeline forecasting is pretty rough, but honestly, we've been hitting our numbers so it hasn't been a big priority.\"\n\nUsing the SPIN Selling framework, write 2–3 Implication questions that would make her feel the urgency of inaccurate forecasting — without being pushy or confrontational. Your questions should naturally lead her to realize the hidden cost of the status quo.",
+  "difficulty": 3,
+  "min_words": 50,
+  "max_length": 800,
+  "correct_answer": "Strong implication questions connect inaccurate forecasting to downstream business consequences the prospect cares about. Examples: (1) Linking to revenue risk: 'When your forecast is off, how does that affect your ability to commit accurate numbers to the board?' (2) Linking to resource misallocation: 'If you're over-forecasting, are reps spending time on deals that won't close — and what does that do to their pipeline coverage for next quarter?' (3) Linking to hiring/scaling decisions: 'When forecasting is unreliable, how confident are you in headcount planning — are you hiring ahead of revenue you're not sure will land?' (4) Linking to rep performance: 'Do your managers have visibility into which deals are truly at risk, or do surprises tend to surface late in the quarter?' The key is that each question should make the prospect articulate a consequence she hasn't fully considered, creating internal tension with the status quo.",
+  "explanation": "SPIN Implication questions are the engine of value creation in consultative selling. While Situation and Problem questions gather facts, Implication questions make the buyer feel the weight of the problem by connecting it to broader business consequences. Neil Rackham's research across 35,000 sales calls found that top performers ask 4x more Implication questions than average performers. The key skill is linking a 'small' problem (rough forecasting) to big outcomes the buyer cares about: board credibility, missed revenue, bad hiring decisions, or end-of-quarter surprises. Notice that great Implication questions don't tell — they ask, letting the buyer convince themselves.",
+  "ai_context": "This question tests SPIN Selling Implication questioning skill — the hardest part of the SPIN framework. Evaluate for: (1) Are the questions genuine Implication questions (exploring consequences of the problem), not Situation questions (gathering facts) or Problem questions (asking about the difficulty)? (2) Do the questions connect 'rough forecasting' to real business consequences like revenue misses, resource misallocation, board credibility, hiring errors, or rep productivity? (3) Is the tone conversational and buyer-centric, not interrogative or scripted? (4) Would a real Head of Sales pause and think after hearing these questions? A perfect answer has 2–3 questions that naturally build on each other, each making the prospect realize a different hidden cost. A weak answer either asks Situation/Problem questions disguised as Implication questions, or asks leading questions that feel manipulative. In your feedback, recommend these resources for deeper study: Huthwaite International (Neil Rackham's company) on SPIN question types with Implication examples: https://www.huthwaiteinternational.com/blog/spin-selling-questions — and HubSpot's SPIN Selling guide with 18 sample Implication questions: https://blog.hubspot.com/sales/spin-selling-the-ultimate-guide",
+  "ai_suggestions": [
+    {
+      "score": 1.0,
+      "text": "True Implication questions connecting rough forecasting to real business consequences — revenue risk, resource misallocation, strategic planning gaps. Conversational tone, naturally building urgency."
+    },
+    {
+      "score": 0.7,
+      "text": "Questions that touch on consequences but stay at surface level, missing deeper links to what the buyer personally cares about — board credibility, quota attainment, hiring confidence."
+    },
+    {
+      "score": 0.3,
+      "text": "Closer to Problem or Situation questions than Implication questions. Identifies the difficulty rather than exploring what it costs the business."
+    },
+    {
+      "score": 0.0,
+      "text": "No Implication questions present. Fact-gathering, product pitching, or basic discovery instead of exploring hidden consequences."
+    }
+  ]
+}
