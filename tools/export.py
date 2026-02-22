@@ -178,13 +178,25 @@ def export_test(test_dir: Path, repo_root: Path) -> dict:
             })
         q["ai_suggestions"] = merged_suggestions
 
-        # question_data — extract type-specific fields from en data
+        # question_data — extract type-specific fields
         qd_fields = QUESTION_DATA_FIELDS.get(platform_type, [])
         question_data: dict = {}
         for field in qd_fields:
-            val = en_data.get(field)
-            if val is not None:
-                question_data[field] = val
+            if field == "options":
+                # options is translatable — merge by index into i18n objects
+                en_opts = en_data.get("options", [])
+                ru_opts = ru_data.get("options", [])
+                question_data["options"] = [
+                    merge_i18n(
+                        en_opts[i] if i < len(en_opts) else None,
+                        ru_opts[i] if i < len(ru_opts) else None,
+                    )
+                    for i in range(max(len(en_opts), len(ru_opts)))
+                ]
+            else:
+                val = en_data.get(field)
+                if val is not None:
+                    question_data[field] = val
         q["question_data"] = question_data
 
         questions.append(q)

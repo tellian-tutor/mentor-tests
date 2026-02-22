@@ -1,0 +1,15 @@
+{
+  "text": "You're in a chat with the customer. What is the BEST next step to take immediately after your first reply?\n\nChoose ONE option.",
+  "difficulty": 2,
+  "options": [
+    "Explain why deliveries can be delayed and ask the customer to wait.",
+    "Ask the customer to repeat the complaint in more detail to 'make sure you understood'.",
+    "Check the order status in internal systems using the identifiers and, if something is missing, ask only for that missing detail.",
+    "Immediately offer compensation and promise delivery within 30 minutes to calm the customer down."
+  ],
+  "correct_index": 2,
+  "allow_multiple": false,
+  "correct_answer": "Verify the order in the system (tracking/dispatch) using the provided identifiers, and clarify the minimum missing detail if needed before promising a solution.",
+  "explanation": "Verification before action is the core support principle. Option A (explain delays) shifts the burden to the customer and sounds dismissive. Option B (repeat the complaint) wastes time and frustrates an already upset customer. Option D (immediate compensation) violates policy \u2014 you cannot promise refunds or compensation before confirming the facts. Option C is correct: check the system first with the identifiers you have, ask only for what's missing, then propose solutions based on verified facts.",
+  "ai_context": "Evaluate the student's choice. Option 0 (explain delays) is passive and dismissive \u2014 it shifts responsibility to the customer. Option 1 (repeat complaint) wastes the customer's time and signals the agent wasn't listening. Option 2 (check system + ask only missing detail) is correct: it's efficient, fact-based, and respects the customer's time. Option 3 (immediate compensation + unrealistic promise) violates policy and sets false expectations. Refer to ISO/SOP references from the test description when providing feedback."
+}

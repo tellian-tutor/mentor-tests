@@ -1,0 +1,27 @@
+{
+  "text": "Assume you checked the system.\n- The courier is delayed due to traffic.\n- Estimated arrival: in ~2 hours.\n- The customer says: \u201cTwo hours is unacceptable. I won\u2019t be home.\u201d\n\nWrite your reply. Keep it short (2\u20134 sentences). Offer clear options and next steps.\n\nAgent capabilities (assume you CAN do these):\n- Contact dispatch/courier to confirm a realistic ETA window.\n- Offer rescheduling to a specific time window (today or next available day).\n- Change delivery address BEFORE the courier arrives (policy permitting).\n- Redirect to a pickup point / parcel locker (if available).\n- Cancel the order and initiate refund according to policy.\n- Offer a standard compensation option only if policy allows (no ad\u2011hoc promises).",
+  "difficulty": 3,
+  "min_words": 25,
+  "max_length": 700,
+  "correct_answer": "A strong reply: acknowledges frustration, gives verified ETA with uncertainty language, offers 2\u20133 realistic options (reschedule window, change address/pickup point, cancel/refund where policy allows), confirms the chosen option, and aligns with what the agent promised earlier.",
+  "explanation": "Resolution messages are judged by options quality and operational clarity (who does what next).",
+  "ai_context": "Must reference previous answers: if the agent promised to 'call back in 5 minutes' or used a specific tone, check consistency. Look for: (1) options, (2) policy-safe wording (no unapproved refunds/discounts), (3) no overpromising, (4) clear next step + confirmation question, (5) concise chat style. Also check whether the student's options align with the listed agent capabilities. Refer to ISO/SOP references from the test description when providing feedback.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Acknowledges frustration, states verified ETA, offers 2-3 concrete options (reschedule/redirect/cancel+refund), asks which option to proceed with."
+    },
+    {
+      "score": 0.7,
+      "text": "Operational and clear, but may offer only one option or miss the confirmation question."
+    },
+    {
+      "score": 0.3,
+      "text": "Vague language ('we'll try', 'maybe'). Missing concrete options or realistic commitments."
+    },
+    {
+      "score": 0,
+      "text": "Promises unauthorized compensation, ignores the customer's constraint, or offers no actionable next steps."
+    }
+  ]
+}
