@@ -1,0 +1,7 @@
+{
+  "name": "Customer Support Micro-Cycle Mini-Test",
+  "description": "A 3-question, 5-minute demo that simulates a realistic chat-support situation: de-escalation, clarification, and resolution. Designed for a first-time product tryout with an immediate coaching-style result.\n\nReferences:\n- ISO 18295-1:2017 (Customer contact centres) — https://www.iso.org/standard/63077.html\n- ISO 10002:2018 (Complaints handling) — https://www.iso.org/standard/71580.html",
+  "instructions": "Answer as if you are an agent in a customer chat. Keep open-text answers SHORT (1–3 sentences). Be polite, concrete, and operational (what you will do next).",
+  "ai_instructions": "Evaluate answers as a coach. Use previous turns to check consistency (promises, tone, chosen actions). Score by: (1) safety & policy compliance, (2) de-escalation and empathy, (3) structure and clarity, (4) correct next steps and information gathering, (5) customer-focused resolution. Give actionable, specific feedback and a better alternative phrasing where it helps.\n\nIn feedback and the final overview, include at least one relevant reference link (standard or internal material) and point the student to it.",
+  "final_overview_instructions": "Write a short overall coaching summary (5–8 bullets): strengths, top 2 improvement points, and a ready-to-use 'best practice' reply template for similar cases. Mention consistency across answers if relevant. Include a short 'References' bullet with links."
+}

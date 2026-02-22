@@ -1,0 +1,27 @@
+{
+  "text": "A customer writes in chat: \u201cYour courier never arrived. I needed the order today. This service is awful.\u201d\n\nWrite your FIRST reply as an agent. Keep it short (1\u20133 sentences).",
+  "difficulty": 2,
+  "min_words": 10,
+  "max_length": 600,
+  "correct_answer": "A good reply acknowledges frustration, apologizes, and immediately moves to a concrete next step + a key clarifying question (e.g., order number / phone / address) without blaming the customer.",
+  "explanation": "The first message sets tone and reduces escalation risk. The goal is: empathy + control + fast path to verification.",
+  "ai_context": "Look for: (1) empathy/apology, (2) one concrete action ('I'll check delivery status now'), (3) one key question to identify the order, (4) no defensiveness or blaming, (5) realistic promise (no impossible deadlines). Refer to ISO/SOP references from the test description when providing feedback.",
+  "ai_suggestions": [
+    {
+      "score": 1,
+      "text": "Empathetic opening with apology, one concrete action (checking status), and one identifying question (order number/phone). Concise, 1-3 sentences."
+    },
+    {
+      "score": 0.7,
+      "text": "Calm, non-defensive tone. Acknowledges the issue but may lack a concrete next action or identifying question."
+    },
+    {
+      "score": 0.3,
+      "text": "Generic apology without a specific action step. No attempt to verify order details."
+    },
+    {
+      "score": 0,
+      "text": "Defensive, dismissive, or blaming the customer. No empathy, no action, no verification question."
+    }
+  ]
+}
